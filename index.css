@@ -500,7 +500,7 @@ footer>div{
 
     figure{
         max-width: 450px;
-
+        width: 100%; /*sous firefox*/               
     }
 
     a.size-figure {  
@@ -511,8 +511,7 @@ footer>div{
     
     .figure-container{ 
         align-items: center;
-        
-        
+        width: 100%; /*sous firefox*/        
     }
 
     .figure-container figure{
@@ -615,8 +614,6 @@ footer>div{
     figure{
         max-width: 400px;
         min-width: 250px;
-      width: 100%; /*sous firefox*/
-
     }
     
     .activites-container{
