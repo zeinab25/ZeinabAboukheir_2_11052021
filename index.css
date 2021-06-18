@@ -116,11 +116,13 @@ h1{
 }
 
 #search-input{
-    padding: 15px;
+    padding-left: 13px;
     border: solid 1px #F2F2F2;
     border-right: none;
     border-left: none;
-    
+    flex: 1;
+    min-width: 150px;
+    max-width: 210px;
 }
 
 #search-input:focus{
@@ -271,6 +273,7 @@ h3, .card-body>div>p{
     border: 2px solid transparent;
     padding: 4px;
     display: flex;
+    min-width: 250px;
 }
 
 .card>a{
@@ -325,7 +328,6 @@ display: flex;
 }
 
 #hebergement>.card-container>.card{
-    min-width: 250px;
     max-width: 400px;
     flex: 1;
 }
@@ -352,12 +354,10 @@ display: flex;
 
 #populaire>.card-container>.card{
     display: flex;
-    min-width: 280px;
+    height: 170px;
 }
 
 #populaire>.card-container>.card>a>.card-image{
-    height: 150px;
-    max-height: 170px;
     flex: 1 1 0;
 }
 
@@ -520,7 +520,7 @@ footer>div{
 } 
 
 
-/* version tablette et mobile*/
+/* version tablette*/
     
  @media screen and (max-width: 768px) {
 
@@ -613,8 +613,7 @@ footer>div{
     
     figure{
         max-width: 400px;
-        min-width: 250px;
-    }
+   }
     
     .activites-container{
         flex-direction: column;
@@ -644,11 +643,21 @@ footer>div{
         }
 }
 
+    /* version mobile */
 
-/* footer version mobile */
     @media screen and (max-width:480px){
-        footer{ 
-        flex-direction: column;
+
+        /*section hergement et les plus populaire */
+
+        .card{
+            min-width: 180px;
         }
+
+        /* footer  */
+
+        footer{ 
+            flex-direction: column;
+        }
+
     }
 
