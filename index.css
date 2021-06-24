@@ -11,7 +11,7 @@ body{
     }
 
 .wrapper{
-        max-width: 1600px;
+        max-width: 1440px;
         margin: 0 auto;
     }
 
@@ -72,12 +72,16 @@ h3, h4{
     .logo{
         padding-left: 40px;
     }
+
+    .nav-link>li a{
+        border-top: solid 3px transparent;
+        padding: 53px 25px 0 25px;
+        }
+
     .nav-link>li a:hover{
-        
+        border-top:  solid 3px #0065FC;
             color: #0065FC;
-            border-top: solid 3px;
-            padding-top: 53px;
-            }
+        }
     
     
 /*Main*/
@@ -466,11 +470,17 @@ figcaption{
 
 /* footer */
 
+
+
 footer{
     background-color: #F2F2F2;
     display: flex;
     padding-left: 40px;
     padding-top: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    justify-content: center;
 }
 
 h4{
@@ -484,6 +494,7 @@ footer li{
 footer>div{
     flex: 1;
     padding-bottom: 20px;
+    max-width: 470px;
 }
 
 
@@ -647,17 +658,19 @@ footer>div{
 
     @media screen and (max-width:480px){
 
-        /*section hergement et les plus populaire */
-
-        .card{
-            min-width: 180px;
-        }
-
         /* footer  */
 
         footer{ 
             flex-direction: column;
         }
 
+    }
+
+    @media screen and (max-width:375px){
+         /*section hergement et les plus populaire */
+
+         .card{
+            min-width: 180px;
+        }
     }
 
